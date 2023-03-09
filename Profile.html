@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Profile</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Custom CSS -->
+    <style type="text/css">
+        /* add border to entire page */
+        body {
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        .container{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .profile-pic{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        h1{
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        h3{
+            font-weight: bold;
+            margin-top: 0px;
+        }
+        p{
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            border: none;
+            background-color: transparent;
+        }
+        .info-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4 text-center">
+				<img class="profile-pic" src="https://via.placeholder.com/150" alt="Profile Picture">
+				<h1 contenteditable="true">John Doe</h1>
+				<h3 contenteditable="true">Web Developer</h3>
+				<hr>
+				<div class="info-box">
+				  <label for="email"><strong>Email:</strong></label>
+				  <input type="email" class="form-control" id="email" placeholder="Enter email" value="john.doe@example.com" contenteditable="true">
+				</div>
+				<div class="info-box">
+				  <label for="phone"><strong>Phone:</strong></label>
+				  <input type="tel" class="form-control" id="phone" placeholder="Enter phone" value="+977 9800000000" contenteditable="true">
+				</div>
+				<div class="info-box">
+				  <label for="address"><strong>Address:</strong></label>
+				  <input type="text" class="form-control" id="address" placeholder="Enter address" value="Chahabil,Kathmandu" contenteditable="true">
+				</div>
+				<div class="info-box">
+				  <label for="gender"><strong>Gender:</strong></label>
+				  <select class="form-control" id="gender" contenteditable="true">
+				    <option>Male</option>
+				    <option>Female</option>
+				    <option>Other</option>
+				  </select>
+				</div>
+				<div class="info-box">
+				  <label for="dob"><strong>Date of Birth:</strong></label>
+				  <input type="date" class="form-control" id="dob" placeholder="Enter date of birth" contenteditable="true">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
